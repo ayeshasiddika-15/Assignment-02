@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+  }
+
+  header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+    margin: 5px;
+    padding: 1px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .thumbnail {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .thumbnail img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lightbox {
+    
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 999;
+    
+  }
+  
+  .lightbox-image {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 10px auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 100px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #f0f0f0;
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+  }

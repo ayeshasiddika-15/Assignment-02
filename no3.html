@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="no3.css">
+  <title>Image Gallery</title>
+</head>
+<body>
+    <header>
+        <h2>Bloom Bookstore's Image Gallery!</h2>
+        </header>
+  <div class="gallery">
+    <div class="thumbnail" onclick="openLightbox(0)">
+      <img src="book1.jpg" alt="Image 1">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(1)">
+      <img src="book2.jpg" alt="Image 2">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(2)">
+      <img src="book3.jpg" alt="Image 3">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(3)">
+      <img src="book4.jpg" alt="Image 4">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(4)">
+      <img src="book5.jpg" alt="Image 5">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(5)">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1594784873i/52523856.jpg" alt="Image 6">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(6)">
+      <img src="https://cdn.kobo.com/book-images/920366a1-4477-42f2-9d15-9b8341d7fa14/1200/1200/False/love-for-imperfect-things.jpg" alt="Image 7">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(7)">
+      <img src="https://m.media-amazon.com/images/I/71OZY035QKL._AC_UF1000,1000_QL80_.jpg" alt="Image 8">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(8)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGrcJWVB_nQYvFpR7kqyivkIAcVYdhfsj2g4rOyUn1wfPBSRpy" alt="Image 9">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(9)">
+      <img src="https://static-01.daraz.com.bd/p/ddb2bcdd7300d032d5a124e60c710127.jpg" alt="Image 10">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(10)">
+      <img src="https://static-01.daraz.com.bd/p/3607b2b54d26310784703c55d4f94220.jpg" alt="Image 11">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(11)">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE38Lb11lIKmHFa_SJ7D8WAInfAj4te5wluns1VkX0L_kgISjz" alt="Image 12">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(12)">
+      <img src="https://static-01.daraz.com.bd/p/66b26c315e9969d14516515e09e9d8c8.jpg" alt="Image 13">
+    </div>
+    <div class="thumbnail" onclick="openLightbox(13)">
+      <img src="https://informednation.in/wp-content/uploads/2023/04/dopamine-detox-768x1187.webp" alt="Image 14">
+    </div>
+    
+
+    
+    
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-image" src="" alt="Full-sized Image">
+  </div>
+
+ 
+
+  <script>function openLightbox(index) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const thumbnails = document.querySelectorAll('.thumbnail img');
+    
+    lightboxImage.src = thumbnails[index].src.replace('thumbnail', 'full');
+    lightbox.style.display = 'flex';
+  }
+
+  thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        lightboxImg.src = thumbnail.src;
+        lightbox.classList.add('active');
+      });
+    });
+  
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+  }
+  </script>
+
+  <!-- <script>
+    const thumbnails = document.querySelectorAll('.thumbnail img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        lightboxImg.src = thumbnail.src;
+        lightbox.classList.add('active');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+  </script> -->
+
+<footer>
+    <p>&copy; 2023 Bloom Bookstore. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    background-color: lightblue;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default text color and font family */
+  body {
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  /* Hero section styles */
+  .hero {
+    background: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* Featured books section styles */
+  .featured-books {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .featured-books h2 {
+    margin-bottom: 20px;
+  }
+  
+  .book {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .book img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+   
+  }
+  
